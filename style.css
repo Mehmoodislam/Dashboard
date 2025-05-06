@@ -103,8 +103,8 @@
     right: 20px;
     background-color: white;
     border:  1px solid rgb(240, 240, 240);
-    min-height: 180px;
-    width: 200px;
+    min-height: 250px;
+    width: 230px;
     border-radius: 15px;
     display: flex ;
     flex-direction: column !important;
@@ -285,6 +285,24 @@ table {
   
   
   
+  /* Profile html CSss  */
+  .box{
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+    /* background-color: #3347b0; */
+    border:  1px solid rgb(240, 240, 240);
+    padding: 1% 24px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .box img{
+    width: 250px;
+    text-align: center;
+    align-self: center;
+
+  }
   
   
   
