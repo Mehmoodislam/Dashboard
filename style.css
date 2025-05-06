@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   display: flex;
+}
+.right{
+    width: 20%;
+    /* background-color: #9c8585; */
+    padding: 20px;
+    border-right: 1px solid rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* flex-direction: ; */
+}
+.right h2{
+    color: #3347b0;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left{
+    width:80%;
+ 
+}
+.list ul{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+}
+.list .ul-2{
+    margin-top: 290px ;
+}
+.list i:hover{
+    color: #3347b0;
+}
+.list li:hover{
+    color: #3347b0;
+}
+.list li:active{
+    color: #3347b0;
+}
+.list ul li{
+    list-style: none;
+    cursor: pointer;
+    color: #727272;
+}
+.list ul li i{
+    font-size: 15px;
+    padding-right: 14px;
+    color: #727272;
+}
+.left .left-header{
+    min-height: 50px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left .left-header .right-r i{
+    font-size: 13px;
+}
+.left .left-header .right-r input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.left .left-header .left-l{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.left .left-header .left-l img{
+    height: 25px;
+    border-radius: 55%;
+    padding-left: 4px;
+}.left .left-header .left-l .fa-arrow-down{
+    font-size: 10px;
+    margin-left: -8px;
+    margin-top: 5px;
+    color: rgb(163, 159, 159);
+    cursor: pointer;
+}
+.left .left-header .left-l .fa-circle-user{
+    padding-left: 5px;
+}
+.left .left-header .left-l span{
+    cursor: pointer;
+    margin-left: -5px;
+    color: rgb(163, 159, 159);
+}
+.card{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    border:  1px solid rgb(240, 240, 240);
+    min-height: 180px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex ;
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 3s ease-in-out;
+    display: none;
+}
+.card img{
+    width:80px !important;
+    height: 80px !important;
+    border-radius: 100% !important;
+    object-fit: cover !important;
+}
+.card .user{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+}
+.card .but button{
+    padding: 7px 18px !important;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.card .but .fir-but{
+    background-color: #3347b0;
+    color: white;
+}
+.profile-wrapper {
+     position: relative;
+    display: inline-block;
+    display: flex;
+    gap: 10px;
+}
+
+/* Fade animation setup */
+.card {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+position: absolute;
+top: 50px;
+right: 0;
+background-color: white;
+border: 1px solid rgb(240, 240, 240);
+min-height: 180px;
+width: 200px;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+justify-content: center;
+z-index: 999;
+}
+
+/* Show class when active */
+.card.show {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+/* Responsivee Header  */
+@media only screen and (max-width: 768px) {
+    .right{
+        display: none;
+    }
+    .container{
+        display: inline;
+    }
+    .left{
+        width: 100%;
+    }
+    .left-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+/* Student Section  */
+.student-container{
+    /* background-color: #3347b0; */
+    min-height: 300px;
+    width: 100%;
+    padding: 30px 40px;
+
+}
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
