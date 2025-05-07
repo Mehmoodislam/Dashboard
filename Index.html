@@ -6,6 +6,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/image.png" type="image/x-icon">
     
     <style>
         
@@ -51,7 +52,7 @@
                           <img src="https://media.istockphoto.com/id/1392528328/photo/portrait-of-smiling-handsome-man-in-white-t-shirt-standing-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=6vUtfKvHhNsK9kdNWb7EJlksBDhBBok1bNjNRULsAYs=" alt="">
                           <span class="user">Mehmood Islam</span>
                           <div class="but">
-                            <button class="fir-but">View</button>
+                            <button class="fir-but" ><a href="profile.html">View</a></button>
                             <button class="sec-but">Edit</button>
                           </div>
                         </div>
@@ -179,38 +180,6 @@
 
 
 
-    <script>
-    const username = document.querySelector('.username');
-    const card = document.querySelector('.card');
-
-    let hideTimeout;
-
-    // Show card on username hover
-    username.addEventListener('mouseenter', () => {
-      clearTimeout(hideTimeout);
-     card.classList.add('show');
-    });
-
-    // Hide card when mouse leaves username (but allow time to move to card)
-    username.addEventListener('mouseleave', () => {
-    hideTimeout = setTimeout(() => {
-    card.classList.remove('show');
-    }, 200); // short delay to allow card hover
-    });
-
-    // Show card if mouse enters card itself
-    card.addEventListener('mouseenter', () => {
-     clearTimeout(hideTimeout);
-     card.classList.add('show');
-    });
-
-    // Hide card when mouse leaves card
-    card.addEventListener('mouseleave', () => {
-      hideTimeout = setTimeout(() => {
-    card.classList.remove('show');
-    }, 200);
-    });
-
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

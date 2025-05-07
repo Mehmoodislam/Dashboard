@@ -8,6 +8,9 @@
    display: flex;
 }
 .right{
+  position: fixed;
+  top: 0;
+  left: 0;
     width: 20%;
     /* background-color: #9c8585; */
     padding: 20px;
@@ -26,12 +29,19 @@
 }
 .left{
     width:80%;
+    position: relative;
+    left: 20%;
  
+}
+a{
+    text-decoration: none;
+    color: #727272;
+
 }
 .list ul{
     display: flex;
     align-items: start;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 30px;
     padding-top: 40px;
 }
@@ -182,6 +192,8 @@ pointer-events: auto;
     }
     .left{
         width: 100%;
+        position: relative;
+        left: 0;
     }
     .left-header{
         display: flex;
@@ -353,3 +365,5 @@ table {
     border:  1px solid rgb(240, 240, 240);
     border-radius: 15px;
 }
+
+

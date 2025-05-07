@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #fff;
+  font-family: font;
+  margin: 0;
+  padding: 0;
+}
+form,
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 100%;
+  
+  @media(max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.btn {
+  align-items: center;
+  background: color;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 15px 45px;
+  transition: .2s;
+  &:hover {
+    background: #2036de;
+    transform: translateY(-2px);
+  }
+
+  .fas.fa-arrow-right {
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 0 0 10px;
+
+  }
+}
+.register,
+.login {
+  border-radius: 5px;
+  box-shadow: shadow;
+  height: auto;
+  max-width: 400px;
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+
+  .fas {
+    color: color;
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+
+  strong {
+    color: #2f2f2f;
+    display: block;
+    font-size: 40px;
+  }
+  span {
+    color: #2f2f2f;
+  }
+
+  .create-account {
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+
+    strong {
+      font-size: 16px;
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+  }
+}
+.register,
+.login {
+  background: white;
+  border:  1px solid rgb(240, 240, 240);
+  border-radius: 12px;
+
+}
+  .form {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+    .form-row {
+      position: relative;
+      text-align: left;
+
+      .fas {
+        font-size: 15px;
+        position: absolute;
+        right: 10px;
+        top: 30px
+      }
+
+      &.bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .forgot {
+          color: color;
+        }
+      }
+      &.button-login {
+        margin-top: 50px;
+        .fas {
+          position: static;
+        }
+      }
+      
+     
+
+    .form-label {
+      color: #555;
+      font-size: 12px;
+    }
+  }
+  .form-password,
+  .form-text {
+    border-radius: 2px;
+    border: 0;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f1f1f1 no-repeat;
+    transition: 100ms all linear 0s;
+    
+ 
+  }
+
