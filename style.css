@@ -38,6 +38,9 @@ a{
     color: #727272;
 
 }
+.list ul li :active{
+  color: #3347b0;
+}
 .list ul{
     display: flex;
     align-items: start;
