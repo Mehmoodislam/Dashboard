@@ -22,6 +22,7 @@ fieldset {
   margin: 50px auto;
   max-width: 1200px;
   width: 100%;
+  /* min-height: 80vh; */
   
   @media(max-width: 768px) {
     flex-wrap: wrap;
@@ -152,4 +153,13 @@ fieldset {
 input{
     outline: none;
     border-radius: 15px;
+}
+.btn{
+  background-color: #2036de;
+  margin-top: -15px !important;
+  border-radius: 12px;
+  font-family: 'poppins';
+}
+.btn:hover{
+  background-color: wheat;
 }
