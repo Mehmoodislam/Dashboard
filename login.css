@@ -155,7 +155,7 @@ input{
     border-radius: 15px;
 }
 .btn{
-  background-color: #2036de;
+  background-color: #2036de !important;
   margin-top: -15px !important;
   border-radius: 12px;
   font-family: 'poppins';

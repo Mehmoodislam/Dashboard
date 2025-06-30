@@ -11,13 +11,14 @@
   position: fixed;
   top: 0;
   left: 0;
-    width: 20%;
-    /* background-color: #9c8585; */
+    width: 17%;
+    background-color: #032313;
     padding: 20px;
     border-right: 1px solid rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
     
     /* flex-direction: ; */
 }
@@ -28,14 +29,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .left{
-    width:80%;
+    width:85%;
     position: relative;
-    left: 20%;
+    left: 15%;
+    background-color: #f5f7fa;
+    min-height: 100vh;
  
 }
 a{
     text-decoration: none;
-    color: #727272;
+    color: white;
 
 }
 .list ul li :active{
@@ -47,6 +50,9 @@ a{
     flex-direction: column; 
     gap: 30px;
     padding-top: 40px;
+}
+.list ul:hover{
+   color: #3347b0;
 }
 .list .ul-2{
     margin-top: 290px ;
@@ -63,7 +69,7 @@ a{
 .list ul li{
     list-style: none;
     cursor: pointer;
-    color: #727272;
+    color: white;
 }
 .list ul li i{
     font-size: 15px;
@@ -71,12 +77,13 @@ a{
     color: #727272;
 }
 .left .left-header{
-    min-height: 50px;
+    min-height: 63px;
     border-bottom: 1px solid rgb(240, 240, 240);
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 
 }
 .left .left-header .right-r i{
